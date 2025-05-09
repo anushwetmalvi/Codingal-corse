@@ -1,0 +1,43 @@
+* {
+     text-align: center;
+    background-color: rgb(0, 0, 0);
+ }
+
+ h2 {
+    color: mediumaquamarine;
+    background-color: rgb(249, 18, 18);
+    font-size: 30px;
+    font-weight: 100;
+ }
+
+.Age {
+    color: darkorange;
+    background-color: rgb(0, 247, 255);
+    font-size: 30px;
+    font-weight: 100;
+ }
+
+#age {
+    color: mediumpurple;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+h4 {
+    color: maroon;
+    background-color: rgb(255, 0, 230);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+p {
+    color: rgb(19, 213, 243);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#Subject {
+    color: rgb(7, 250, 100);
+    font-size: 30px;
+    font-weight: 100;
+}
