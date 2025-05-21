@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial','sans-serif';
+    background-color: rgb(124, 255, 213);
+    color : hsl(210, 99%, 50%);
+}
+
+h1 {
+    color: #f33c3c;
+}
+
+/* Attribute Selector */
+a {
+    color: #7a8592;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1f4beb;
+}
+
+/* child selector */
+ul>li {
+    font-weight: bold;
+}
+
+/* sibling selector */
+h1+p {
+    background-color: #006aff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color: #f8d705;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+   background-color: #0ae3e3; 
+}
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "🚗";
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: "🚙";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 200%;
+    color: #FF7B72;
+}
