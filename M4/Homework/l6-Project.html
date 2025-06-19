@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+
+</script>
+
+<style>
+    body {
+        position: relative;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #section1 {
+        padding-top: 50px;
+        height: 700px;
+        color: rgb(95, 254, 251);
+        background-color: rgb(255, 111, 111);
+    }
+
+    #section2 {
+        padding-top: 50px;
+        height: 700px;
+        color: rgb(247, 0, 255);
+        background-color: rgb(255, 247, 0);
+    }
+</style>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar"></body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: royalblue;">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Animal" style="font-size: 40px; color: rgb(255, 0, 0); text-shadow: 2px 4px 2px rgba(0, 132, 255, 0.5);">About Animals</a>
+            </div>
+            <div>
+               <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                       <li><a href="#section1">Section 1 Information about Animals</a></li>
+                       <li><a href="#section2">Section 2 Animal Images</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="section1" class="container-fluid">
+        <h1>Information about Animals</h1>
+        <h3>Animals</h3>
+        <p>Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia (/ˌænɪˈmeɪliə/[4]). With few exceptions, animals consume organic material, breathe oxygen, have myocytes and are able to move, can reproduce sexually,
+         and grow from a hollow sphere of cells, the blastula, during embryonic development. Animals form a clade, meaning that they arose from a single common ancestor.Over 1.5 million living animal species have been described, of which around 1.05
+          million are insects, over 85,000 are molluscs, and around 65,000 are vertebrates. It has been estimated there are as many as 7.77 million animal species on Earth. Animal body lengths range from 8.5 μm (0.00033 in) to 33.6 m (110 ft). They have
+           complex ecologies and interactions with each other and their environments, forming intricate food webs. The scientific study of animals is known as zoology, and the study of animal behaviour is known as ethology.
+        </p>
+        <h2>Animals are such agreeable friends — they ask no questions, they pass no criticism.</h2>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>Animal Images</h1>
+        <h3>Animal Carousel</h3>
+        <p>This is a Animal carousel.</p>
+        
+    <div class="container">
+        <h2 style="color: brown;">Animal Carousel</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="animal-6679843_1280 - Copy.jpg" alt="Los Angeles" style="width:100%;">
+                <div class="carousel-caption">
+                    deer
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="duck-6198196_1280.jpg" alt="Chicago" style="width:100%;">
+                <div class="carousel-caption">
+                    duck
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="fox-715588_1280.jpg" alt="New York" style="width:100%;">
+                <div class="carousel-caption">
+                    fox
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="leopard-515509_1280.jpg" alt="New York" style="width:100%;">
+                <div class="carousel-caption">
+                    leopard
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+
+    <div class="spacer" style="height: 100px;"></div>
+</html>
