@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(255, 255, 255);
+                font-family: cursive;
+                text-align: center;
+            }
+            button {
+                padding: 10px 20px;
+                border: 2px solid #ff7979;
+                border-radius: 5px;
+                color: #00ffe5;
+            }
+          
+        </style>
+    </head>
+    
+<body>
+    <p style="background-color: rgb(0, 247, 255); color: rgb(255, 0, 0);
+    font-size: 20px; font-weight: bold;">If you click the following button then it will show the result of 5 * 10 + 2</p>
+
+    <button onclick="myFunction()" style="background-color: rgb(255, 0, 0); box-shadow: 2px 5px 5px rgba(0,0,0,0.5);">Click me!</button>
+    <p id="demo" style="color: rgb(32, 255, 29); font-size: 20px; font-weight: bold; background-color: rgb(223, 217, 255);"></p>
+
+
+
+    <p style="background-color: rgb(255, 153, 0); color: rgb(55, 0, 255);
+    font-size: 20px; font-weight: bold;">If you click the following button then it will show the result of 10 * 3 + 2</p>
+    
+    <button onclick="myFunction2()" style="background-color: rgb(255, 0, 234); box-shadow: 2px 5px 5px rgba(0,0,0,0.5);">Click me!</button>
+    <p id="demo1" style="color: rgb(255, 179, 0); font-size: 20px; font-weight: bold; background-color: rgb(223, 217, 255);"></p>
+
+
+
+
+    <p style="background-color: rgb(0, 255, 55); color: rgb(47, 0, 255);
+    font-size: 20px; font-weight: bold;">If you click the following button then it will show the result of 10 * 15 + 5</p>
+    
+    <button onclick="myFunction3()" style="background-color: rgb(255, 140, 0); box-shadow: 2px 5px 5px rgba(0,0,0,0.5);">Click me!</button>
+    <p id="demo2" style="color: rgb(42, 149, 165); font-size: 20px; font-weight: bold; background-color: rgb(223, 217, 255);"></p>
+
+
+
+    <p style="background-color: rgb(255, 0, 0); color: rgb(255, 196, 0);
+    font-size: 20px; font-weight: bold;">If you click the following button then it will show the result of 9 * 3 + 15</p>
+    
+    <button onclick="myFunction4()" style="background-color: rgb(38, 0, 255); box-shadow: 2px 5px 5px rgba(0,0,0,0.5);">Click me!</button>
+    <p id="demo3" style="color: rgb(255, 0, 0); font-size: 20px; font-weight: bold; background-color: rgb(223, 217, 255);"></p>
+
+    
+    <script>
+        var b = 5;
+        var c = 2; 
+        var a = 10;
+        var d = 3;
+        var e = 9;
+        var f = 15;
+        function myFunction() {
+            
+            document.getElementById("demo").innerHTML = b * a + c;
+        }
+        function myFunction2() {
+            document.getElementById("demo1").innerHTML = a * d + c;
+        }
+
+        function myFunction3() {
+            document.getElementById("demo2").innerHTML = a * f + b;
+        }
+
+        function myFunction4() {
+            document.getElementById("demo3").innerHTML = e * d + f;
+        }
+    </script>
+</body>
+</html>
