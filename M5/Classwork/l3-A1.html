@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        <h2>Javascript String Methods</h2>
+        <p>Basic Methods</p>
+
+        <script>
+            // String Methods
+            var str = "AmAzInG";
+            document.write(str.toUpperCase()); 
+            document.write("<br>" );
+            document.write(str.toLowerCase()); 
+            document.write("<br>" );
+            document.write(str.startsWith("a"));
+            document.write("<br>" );
+
+            var str = "i learnt about string methods";
+            var patt = new RegExp("learnt");
+            var res = patt.test(str);
+            document.write(res);
+        </script>
+    </body>
+</html>
