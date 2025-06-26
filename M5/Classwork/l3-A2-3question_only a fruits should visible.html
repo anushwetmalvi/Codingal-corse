@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Javascript For loop (Only A-Starting Fruits using RegExp)</h2>
+
+        <script>
+            var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana", "Cherry", "Avacado"];
+            var regex = /^A/i;
+
+            for (var i = 0; i < fruits.length; i++) {
+                if (regex.test(fruits[i])) {
+                    var text = fruits[i] + "<br>";
+                    document.write(text);
+                }
+            }
+        </script>
+
+    </body>
+</html>
