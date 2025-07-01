@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <body>
+  <body>
 
-        <h2>Javascript For loop (Only A-Starting Fruits using RegExp)</h2>
+    <h2>JavaScript ForEach Loop (Only A-Starting Fruits using RegExp)</h2>
 
-        <script>
-            var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana", "Cherry", "Avacado"];
-            var regex = /^A/i;
+    <script>
+      var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana", "Cherry", "Avacado"];
+      var regex = /^A/i;
 
-            for (var i = 0; i < fruits.length; i++) {
-                if (regex.test(fruits[i])) {
-                    var text = fruits[i] + "<br>";
-                    document.write(text);
-                }
-            }
-        </script>
+      fruits.forEach(function(fruit) {
+        if (regex.test(fruit)) {
+          document.write(fruit + "<br>");
+        }
+      });
+    </script>
 
-    </body>
+  </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Javascript loop with Math.random()</h2>
+
+    <script>
+        var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        for (var i = 0; i < num.length; i++) {
+            var random = Math.random() * 10;
+            var result = num[i] + random;
+            var text = result.toFixed(2) + "<br>";
+            document.write(text);
+        }
+    </script>
+
+    <h2>Today's Date</h2>
+    <p id="demo"></p>
+
+    <!-- Move script here -->
+    <script>
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday"; 
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday" ;
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = day;
+    </script>
+
+</body>
+</html>
