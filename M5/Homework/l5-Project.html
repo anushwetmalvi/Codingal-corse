@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2> Objects </h2>
+    <p id="demo"></p>
+    
+    <script>
+        var person = {
+            firstName: "Anushwet",
+            age: 11,
+            school: "SNBP",
+            grade: 7
+        };
+
+        
+        document.getElementById("demo").innerHTML = person.firstName + " is "
+        + person.age + " years old. He studies in " + person.school + " in grade " + person.grade + ".";
+    </script>
+
+    <h2>Array</h2>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        var fruits = ["Apple", "Banana", "Mango"];
+        document.getElementById("demo2").innerHTML = "Fruits: " + fruits.join(" 🍌 ") + ".";
+        fruits.pop();
+        document.getElementById("demo3").innerHTML = "After removing the last fruit: " + fruits.join(" 🍌 ") + ".";
+        
+        var index = fruits.indexOf("Banana");
+        document.getElementById("demo4").innerHTML = "Index of Banana: " + index;
+    </script>
+</body>
+</html>
