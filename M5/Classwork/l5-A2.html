@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="myjoin"></p>
+    <p id="oringinalarray"></p>
+    <p id="myfirstpop"></p>
+
+    <script>
+        //array
+        var Fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        //join
+        document.getElementById("myjoin").innerHTML = Fruits.join(" @@__@@ ");
+
+        //original array
+        document.getElementById("oringinalarray").innerHTML = Fruits;
+
+        //pop
+        var myfirstpop = Fruits.pop();
+        document.getElementById("myfirstpop").innerHTML = Fruits;
+
+        //pushing new fruit
+        Fruits.push("Pineapple");
+        document.write(Fruits);
+
+        //reverse
+        Fruits.reverse();
+        document.write("<br><br>")
+        document.write(Fruits);
+
+        //sorting
+        Fruits.sort();
+        document.write("<br><br>")
+        document.write(Fruits);
+
+        //shift
+        Fruits.shift();
+        document.write("<br><br>")
+        document.write(Fruits);
+
+        //index
+        var index = Fruits.indexOf("Orange");
+        document.write("<br><br>")
+        document.write(index);
+    </script>
+</body>
+</html>
