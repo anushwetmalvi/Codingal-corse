@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>i have a car</h2>
+    
+    <p id="details"></p>
+
+    <script>
+        class color {
+            constructor(carcolor) {
+                this.carcolor = carcolor;
+            }
+        }
+
+        class car extends color {
+            constructor(brand, carcolor) {
+                super(carcolor); 
+                this.carname = brand;
+            }
+
+            static present() {
+                return 'I have a car'; 
+            }
+        }
+
+        class model extends car {
+            constructor(brand, mod, carcolor) {
+                super(brand, carcolor); 
+                this.model = mod;
+            }
+
+            static show() {
+                return this.present() + ', it is a model with some color.';
+            }
+        }
+
+        let mycar = new model("Ford", "Mustang", "Red");
+
+        document.getElementById("details").innerHTML = 
+            "Brand: " + mycar.carname + "<br>" +
+            "Model: " + mycar.model + "<br>" +
+            "Color: " + mycar.carcolor;
+    </script>
+</body>
+</html>
