@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Numbers</title>
+</head>
+<body>
+
+<h2>Random Numbers using JavaScript</h2>
+<p id="randomNumbers"></p>
+
+<script>
+    let text = "";
+    let count = 10;
+    let i = 0;
+
+    while (i < count) {
+        let randomNum = Math.floor(Math.random() * 100);
+        text += "Random number " + (i + 1) + " is: " + randomNum + "<br>";
+        i++;
+    }
+
+    document.getElementById("randomNumbers").innerHTML = text;
+</script>
+
+</body>
+</html>
