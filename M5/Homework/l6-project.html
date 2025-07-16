@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objects and Arrays</title>
+</head>
+<body>
+
+<h2>Object and Array Example</h2>
+<p id="output"></p>
+
+<script>
+    let person = { name: "Anushwet", age: 12, city: "Delhi" };
+    let fruits = ["Apple", "Banana", "Mango"];
+
+    let text = "";
+    text += person.name + "<br>";
+    text += person.age + "<br>";
+    text += person.city + "<br><br>";
+
+    text += fruits[0] + "<br>";
+    text += fruits[1] + "<br>";
+    text += fruits[2] + "<br><br>";
+
+    text += fruits.join(", ") + "<br><br>";
+
+    fruits.pop();
+    text += fruits.join(", ");
+
+    document.getElementById("output").innerHTML = text;
+</script>
+
+</body>
+</html>
