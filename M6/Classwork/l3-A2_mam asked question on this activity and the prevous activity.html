@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>add every element in the array with 10:</p>
+    <p id="product_value"></p>
+    <script>
+        var numbers = [28, 6 , 19 ,95];
+
+        function myfunction(num) {
+            return num + 10;
+        }
+
+        var product = numbers.map(myfunction);
+        document.getElementById("product_value").innerText = product;
+
+    </script>
+
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+    <p id="result"></p>
+    <script>
+       var numbers = [38, 16 , 29 ,105];
+        function ascending() {
+            numbers.sort((a, b) => { return a - b; });
+            document.getElementById("result").innerText = numbers;
+        }
+
+        function descending() {
+            numbers.sort((a, b) => { return b - a; });
+            document.getElementById("result").innerText = numbers;
+        }
+    </script>
+</body>
+</html>
