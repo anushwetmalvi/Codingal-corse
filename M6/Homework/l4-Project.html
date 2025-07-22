@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                margin: 20px;
+            }
+            h1 {
+                color: #ff3e38;
+                box-shadow: 0 0 10px rgba(255, 62, 56, 0.5);
+                padding: 10px;
+                margin: 20px ;
+            }
+            code {
+                background-color: #b1a9a9;
+                padding: 6px;
+                border-radius: 3px;
+                color: rgb(0, 0, 0);
+            }
+            b {
+                background-color: #d9534f;
+                color: #fff;
+                padding: 4px 8px;
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <h1>JavaScript error</h1>
+
+    <p>this will show the addition of two numbers:</p>
+    <p> and show a error because-</p>
+    <code>var a = 14<br>
+          var b = 10<br>
+          add(a + b);</code>
+    <p> so it will show that add is not defined</p><hr>
+    <P><b>error</b></P>
+
+    <p id="error_message"></p>
+
+    <script>
+        try {
+            var a = 14
+            var b = 10
+            add(a + b);
+        } 
+        catch (err) {
+            document.getElementById("error_message").innerHTML = err.message;
+        }
+    </script>
+</body>
+</html>
+       
