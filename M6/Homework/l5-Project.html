@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript async / await</h1>
+    <h3 id="demo"></h3>
+    <h2 id="result"></h2>
+    <script>
+        async function multiply(a, b) {
+            let response = await (a * b);
+            display(response);
+        }
+        function display(a) {
+            document.getElementById("result").innerHTML = a;
+        }
+        let x = 5;
+        multiply(x, 20);
+
+        document.getElementById("demo").innerHTML = "The result of multiplying " + x + " and 20 is displayed below:";
+
+    </script>
+</body>
+</html>
