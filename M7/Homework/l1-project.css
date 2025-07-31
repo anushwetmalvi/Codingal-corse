@@ -1,0 +1,31 @@
+body {
+    background-color: #252525;
+    font-family: "Baloo Tamma 2", cursive;
+    scroll-behavior: smooth;
+}
+
+/* Navigation*/
+.navigation-link {
+    border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #f0f0f0;
+    transition: 0.5s ease;
+}
+
+.m-heading {
+    font-family: "roboto slab",serif;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(robot.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
