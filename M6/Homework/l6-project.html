@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()">
+       <label>Name: </label>
+       <input type="text" name="name" placeholder="Enter your name"><br><br>
+       <label>Age: </label>
+       <input type="number" name="age" placeholder="Enter your age"><br><br>
+       <input type="submit">
+    </form>
+    <script>
+        function validateForm() {
+            var name = document.forms["myForm"]["name"].value;
+            var age = document.forms["myForm"]["age"].value;
+            if (name == "" || age == "") {
+                document.write("Please fill out all fields");
+                return false;
+            }
+            if (age < 18) {
+                document.write("Age must be at least 18");
+                return false;
+            } 
+            else {
+                document.write("Age is correct and it is above 18 years.");
+            }
+        }
+    </script>
+</body>
+</html>
