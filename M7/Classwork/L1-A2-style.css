@@ -1,0 +1,21 @@
+body {
+    background: #252525;
+    font-family: "Baloo Tamma 2", cursive;
+    scroll-behavior: smooth;
+}
+
+
+.m-heading {
+    font-family: "roboto slab",serif;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(robot.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
