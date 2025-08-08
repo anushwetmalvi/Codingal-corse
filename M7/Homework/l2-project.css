@@ -1,0 +1,23 @@
+.about {
+    background-color: #313552;
+    border-radius: 0.5rem;
+}
+
+.m-heading {
+    border-bottom: 8px solid #f5ba09;
+}
+
+.color_h1 {
+    color: #ed5555;
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.5);
+    background-color: #00ffd9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #252525;
+    font-family: "Baloo Tamma 2", cursive;
+}
