@@ -18,10 +18,13 @@ body {
     top: 20px;
     position: relative;
     border-radius: 50px;
+    box-shadow: 25px 25px 100px red;
+    
 }
 
 #keyboard {
     height: 400px;
+    padding-top: 50px;
 }
 
 .operator,
@@ -39,11 +42,11 @@ body {
 
 .number,
 .empty {
-    background-color: #6fe0a0;
+    background-color: #00ffe5;
 }
 
 .operator {
-    background-color: #916fe0;
+    background-color: #ffaa00;
 }
 
 .number,
@@ -54,10 +57,11 @@ body {
 .operator:active,
 .number:active {
     font-size: 30px;
+    background-color: red;
 }
 
 .operator:focus,
 .number:focus,
 .empty:focus {
-    outline: 2px dashed rgb(205, 31, 141);
+    outline: 2px dashed rgb(230, 47, 47);
 }
