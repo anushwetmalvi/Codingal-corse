@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank app</title>
+
+    <link rel="stylesheet" href="l4-Project-style.css">
+</head>
+
+<body>
+    <h1 id="Bank">Welcome to the Bank App</h1>
+    <p id="Welcome">your money management solution.</p>
+
+    <h2 id="Details">please put the money details down-</h2>
+    
+    <form id="loginForm" onsubmit="validate(event)">
+        <fieldset>
+
+            
+            <div>
+                <label for="income">your income:</label>
+                <input type="number" id="income" name="income" min="1" max="50000000">
+            </div>
+
+        <div>
+            <label for="expenses">your expenses:</label>
+            <input type="number" id="expenses" name="expenses" min="0" max="50000000">
+        </div>
+            <button type="submit">submit</button>
+
+        </fieldset>
+    </form>
+
+    <script src="l4-Project-script.js"></script>
+</body>
+</html>
