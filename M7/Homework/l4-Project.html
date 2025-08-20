@@ -3,34 +3,35 @@
 
 <head>
     <title>Bank app</title>
-
     <link rel="stylesheet" href="l4-Project-style.css">
 </head>
 
 <body>
     <h1 id="Bank">Welcome to the Bank App</h1>
-    <p id="Welcome">your money management solution.</p>
+    <p id="Welcome">Your money management solution. It's simple and easy to use.</p>
 
-    <h2 id="Details">please put the money details down-</h2>
-    
-    <form id="loginForm" onsubmit="validate(event)">
+    <h2 id="Details">Please put the money details down-</h2>
+    <h3 id="Details">It will ask you for your income and expenses. And then calculate and give you the result.</h3>
+
+    <form id="income-form">
         <fieldset>
-
-            
             <div>
-                <label for="income">your income:</label>
-                <input type="number" id="income" name="income" min="1" max="50000000">
-            </div>
+                <label for="income">Your income:</label>
+                <input type="number" id="income" name="income" min="1" max="500000000000000" placeholder="enter your income">
+            </div><br>
 
-        <div>
-            <label for="expenses">your expenses:</label>
-            <input type="number" id="expenses" name="expenses" min="0" max="50000000">
-        </div>
-            <button type="submit">submit</button>
-
+            <div>
+                <label for="expenses">Your expenses:</label>
+                <input type="number" id="expenses" name="expenses" min="0" max="500000000000000" placeholder="enter your expenses">
+            </div><br>
+        
+            <button type="button" onclick="calculateIncome()">submit</button>
         </fieldset>
     </form>
 
-    <script src="l4-Project-script.js"></script>
+    <h1 id="result-h1">Result will be shown down below-</h1>
+    <h2 id="result"></h2>
+
+    <script src="l4-project-script.js"></script>
 </body>
 </html>
