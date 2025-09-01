@@ -7,4 +7,4 @@ if num > 50:
     else:
         print("and it is odd")
 else:
-    print("Number is less than 50") 
+    print("Number is less than 50")
